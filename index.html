@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>san-infos</title>
-
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+    
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
@@ -31,6 +34,7 @@
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#animes">anime</a></li>
+         <li><a href="#skill">skills</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
@@ -138,8 +142,66 @@
 </section>
 
 <!-- portfolio section ends -->
+ 
+  
+    <div class="skills" id="skill">
+      <div class="skill">
+        <div class="skill-name">Java</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="90"></div>
+        </div>
+      </div>
 
+      <div class="skill">
+        <div class="skill-name">Javascript</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="85"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Html</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="80"></div>
+        </div>
+      </div>
+    </div>
+    
+     <div class="skill">
+        <div class="skill-name">Css</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="70"></div>
+        </div>
+      </div>
+  
+   <div class="skill">
+        <div class="skill-name">TypeScript</div>
+        <div class="skill-bar">
+          <div class="skill-per" per="20"></div>
+        </div>
+      </div>
+    
+    
+    <script>
+      $('.skill-per').each(function(){
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width",per+'%');
+        $({animatedValue: 0}).animate({animatedValue: per},{
+          duration: 1000,
+          step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
 <!-- contact section starts  -->
+
+
+
 
 <section class="contact" id="contact">
 
