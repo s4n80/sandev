@@ -3,7 +3,7 @@
     --black:#000;
     --white:#fff;
     --gray:#333;
-    --primary:#8BFBFF;
+    --primary:RED;
     --secondary:#FB38C8;
     --third:#FF602A;
 
@@ -26,7 +26,7 @@ body.dark{
     --white:#000;
     --gray:#333;
     --secondary:#8BFBFF;
-    --primary:#FB38C8;
+    --primary:RED;
     --third:#FF602A;
 }
 body.overflow{
