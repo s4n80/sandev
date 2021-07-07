@@ -107,7 +107,8 @@ conbtn.addEventListener('click', () => {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Kurdish Developer", "San", "SanDev"];
+const textArray = ["San", "no system is safe!", "aim for the impossible"];
+
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
