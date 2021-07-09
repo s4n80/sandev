@@ -107,7 +107,7 @@ conbtn.addEventListener('click', () => {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["San", "no system is safe!", "aim for the impossible"];
+const textArray = ["San", "Sandev", "no system is safe"];
 
 const typingDelay = 200;
 const erasingDelay = 100;
